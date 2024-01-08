@@ -8,7 +8,6 @@ while valor > 20:
     valor -=5
 
 print('----- Aula 37 -----')
-
 # A37 - Operador Ternário - Programa que checa se a pessoa pode ou não votar nas eleições.
 idade = 14
 
