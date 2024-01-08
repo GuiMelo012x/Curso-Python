@@ -213,3 +213,36 @@ Funções em Sets
 
 Dicionário
 	Dicionários utilizam index no formato de keys e de values, e aceita string, int, float, boolean.
+	aluno = {'nome':'Ana', 'idade': 16, 'nota final': 'A','aprovação': True}
+				nome = key | Ana = value 
+				idade = key | 16 = value 
+				nota final = key | A = value
+				aprovação = key | True = value
+	
+	print(aluno['nome']) # pois usa o index no formato de keys e values
+	print(aluno.get('nome')) -> retorna o nome
+	print(aluno.get('nomesss', 'nao existe')) -> se nao existir, retorna o "não existe"
+
+		
+	del aluno['idade'] -> remove a idade
+	aluno['nome'] = 'José'
+	aluno.update({'nome': 'José', 'nota final': 'B', endereco: 'Rua A', 'materias': ['Fisica','Quimica','Matematica']}) -> neste método, é possível atualizar mais de um ao mesmo tempo, e ainda adicionar
+	
+Imprimindo no Dicionário com Loop	
+	for i in aluno: -> imprime apenas os values
+		print(aluno[i])
+
+	for i in aluno.values(): -> imprime apenas os values
+		print(i)
+
+	for i in aluno.items(): -> imprime keys e values
+		print(i)
+	
+	for keys,values in aluno.items(): -> imprime keys e values
+		print(keys, values)
+		
+	print(aluno.get('materias')) # mostra as 3 materias q ele faz
+	print(len(aluno)) # mostra a quantidade de keys (5)
+	print(aluno.keys()) # mostra as keys
+	print(aluno.values()) # mostra os values
+	print(aluno.items()) # mostra os itens (keys e values)
