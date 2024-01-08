@@ -246,3 +246,41 @@ Imprimindo no Dicionário com Loop
 	print(aluno.keys()) # mostra as keys
 	print(aluno.values()) # mostra os values
 	print(aluno.items()) # mostra os itens (keys e values)
+
+Função Lambda
+	É uma função pequena e sem nome, podendo ter vários argumentos, mas somente uma expressão.
+	É muito utilizada dentro de outras funções, e deixa o código mais limpo.
+	somar = lambda x: x+10
+		print(somar(2)) --> 2 + 10 = 12
+	somar = lambda x,y: x + y + 10
+		print(somar(4,2)) --> 5 + 2 + 10 = 16
+
+Função Map
+	função() --> calcula x * 2
+	lista1 = [1,2,3,4]
+	lista2 = map(função,lista1) --> 1*2 | 2*2 | 3*2 | 4*2 | 5*2
+	print(list(lista2)) --> tem q ser printado em lista.
+	
+Função Filter
+	Filtrando valores abaixo de 20.
+	valores = [10,12,34,44,57]
+
+	def remover20(x):
+		return x>20
+
+	print(list(filter(remover20,valores))) # com função 
+		print --> [34,44,57]
+		
+List Comprehension com String
+	Forma mais facil de escrever, utilizado quando voce precisa criar uma nova lista a partir de outra existente
+	frutas4 = [letra for letra in frutas1 if 'b' in letra]
+	
+Generator Expressions
+	Uma forma mais rápida para listas, dicionários e etc.
+	Usando ele, utiliza menos memória alocada
+	Para usar, só trocar o colchetes das listas pelos parênteses.
+	Utilizado quando você precisa rodar um numero muito grande na memoria.
+	
+	numeros2 = [x*10 for x in range(5)] --> (x*10 for x in range(5))
+
+
