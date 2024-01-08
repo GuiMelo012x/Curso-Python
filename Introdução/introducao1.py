@@ -64,7 +64,6 @@ print(texto)
 texto2 = f'0 {nome} {sobrenome} é um excelente [{profissao}]'
 
 print(texto2)
-
 # MÉTODOS DE STRING
 
 mensagem = 'Eu adoro programacao'
