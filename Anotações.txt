@@ -284,3 +284,37 @@ Generator Expressions
 	numeros2 = [x*10 for x in range(5)] --> (x*10 for x in range(5))
 
 
+Exception
+	try:
+		letras = ['a','b','c']
+		print(letras[3]) --> não existe, vai dar erro.
+	except IndexError: --> o erro que dá.
+		print('Index não existe.') # se der indexerror, ele não dará erro, ele vai dar uma exceção.
+		
+	try:
+		valor = int(input('Digite o valor do seu produto: ')) 
+	except ValueError:
+		print('Digite um valor válido.') # vai dar erro, porém o programa não vai encerrar.
+
+
+	try:
+		valor = int(input('Digite o valor do seu produto: '))
+	except ValueError:
+		print('Digite um valor válido.') # vai dar erro, porém o programa não vai encerrar.
+	else:
+		print('Usuário digitou um valor correto.')
+		comissão = valor * 0.3
+		print(f' o valor do produto será de R$ {valor + comissão}.')
+		
+	Se digitar correto, o else será ativado e o exception não.
+	Se digitar errado, o exception será ativado e o else não.
+	
+	
+	finally --> executa de todo jeito, se der certo ou errado.
+	try:
+		valor = int(input('Digite o valor do seu produto: '))
+	except ValueError:
+		print('Digite um valor válido.') # vai dar erro, porém o programa não vai encerrar.
+	finally:
+		print('Código finalizado.')
+	
