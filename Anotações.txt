@@ -1,0 +1,156 @@
+Para comentar  com Python, utiliza-se # na linha ou ''' para algo mais longo.
+
+String
+	usa-se Str("texto")
+	x = str("teste de print")
+	
+	
+Se você colocar apenas x = 2, ele já é considerado como 2, sem precisar de int, float, double.
+
+Transformando um x = 2 em float:
+	x = float(2)
+	
+Input
+	nome = input("texto")
+		dessa forma, será por padrão colocado como String.
+		
+Print type
+	print(type(x)) 
+		ele printa o tipo de dado que x é.
+
+Slicing
+	vetorização das palavras e dos números
+	se voce quer pegar o C da palavra abacate, a formatação é:
+	fruta = 'abacate'
+	print(fruta[3]) -> pega o "C"
+	
+Formatted String
+	forma resumida de fazer um texto
+	texto2 = f' Oii {a} voce tem quantos anos? eu tenho {b} ! ' 
+		a string ja começa formatada a partir do primeiro apóstrofo.
+
+
+Métodos de uma String
+	só colocar um ponto após a string;
+	mensagem = 'oi'
+	print(mensagem.(metodo))
+	print(mensagem.upper())
+	print(mensagem.lower())
+	print(mensagem.replace('adoro','amo')) # troca o "adoro" por "amo".
+	print(mensagem.capitalize()) # deixa em maiúsculo a primeira letra.
+	print(mensagem.find('a')) # procura em que local está a letra ou em que ponto começa uma palavra.
+	print(mensagem.find('adoro'))
+	print(mensagem.strip()) # remove qualquer espaço que tenha antes do primeiro caracter.
+	
+Comparadores
+	== se é igual
+	!- se é diferente
+	> se é maior que
+	< se é menor que 
+	>= se é maior ou igual a 
+	<= se é menor ou igual a 
+
+Operadores de Atribuição
+	x = 10
+	
+	x = x + 5 # x = 15 pode ser simplificado em -> x = += 5 # x = 15
+	x = x - 5 # x = 5 pode ser simplificado em -> x = -= 5 # x = 5	
+	x = x * 5 # x = 50 pode ser simplificado em -> x = *= 5 # x = 50
+	x = x / 5 # x = 2 pode ser simplificado em -> x = /= 5 # x = 2
+	x%3 = 3 # mostra o resto da divisão
+	
+If e Else
+	velocidade = 100
+	if velocidade > 110:
+		print('Acima da velocidade permitida.')
+		print('Favor reduzir a sua velocidade.')
+		
+	elif velocidade < 60: 				# pode ter quantos quiser
+    print('Dirija acima de 80km/h') 
+
+	else:
+		print('Velocidade ok')
+		
+Operadores Lógicos
+	if renda_acima_5mil and/or nome_limpo:
+		print('Financiamento aprovado')
+	else:
+		print('Financiamento negado')
+		
+	
+
+Sorted
+	Ordena os números em ordem crescente em forma de vetor.
+		ordenados = sorted([n1,n2,n3])
+		print(ordenados[0],ordenados[1],ordenados[2])
+		
+For 
+	Imprimir de 1 a 5 
+	for numero in range (6):
+		print(numero)
+	
+	
+	valores = [10,20,30,40,50]
+	for i in valores:
+		print(f'O valor final do produto é de R$ {i}.')
+
+
+
+
+XArgs
+	def somar(*numeros) 
+		um asterisco diz que são vários números
+	def agencia(**carro): 
+		dois asteriscos significam que são vários parâmetros e que você pode passa-los embaixo
+    
+	
+Listas
+	inicializa com colchetes
+	cidades = ['Gramado', 'Santos', 'Garanhuns', 'Curitiba']
+
+Funções do Python:
+	cor_cliente.lower() - retira a sensibilidade do maiúsculo ou minúsculo do input.
+
+
+Funções dentro de Listas - https://docs.python.org/3/tutorial/datastructures.html
+	#list.append - adiciona um item no final da lista.
+		cidades.append('Curitiba')
+	
+	#list.remove - remove um item da lista.
+		cidades.remove('Garanhuns')
+	
+	#list.insert - adiciona um item na posição solicitada.
+		cidades.insert(1, 'Porto de Galinhas') # [1] = antes de Santos, depois de Gramado.
+	
+	#list.pop - remove o item da posição solicitada.
+		cidades.pop(0) # remove Gramado
+	
+	#list.sort - organiza a lista em ordem alfabética
+		cidades.sort()
+	
+	#list.extend(list2) - adiciona uma lista na outra.
+		numeros.extend(letras)
+	
+	#list('string') - cria uma lista com os caracteres da string.
+		list('comprar') # ['c', 'o', 'm', 'p', 'r', 'a', 'r']
+		list('12345') # ['1', '2', '3', '4', '5']
+	
+	#zip.(lista1,lista2) - junta duas listas de modo que o [i] de uma junta com o [i] de outra.
+		cores = ['preto', 'branco', 'cinza', 'azul']
+		valores = [10,20,30,40]
+		teste = zip(cores,valores) --> [('preto', 10), ('branco', 20), ('cinza', 30), ('azul', 40)]
+		para printar, deve-se colocar: print(list(teste))
+
+	#list.split(',' |' ' | 'o' ) - separa a lista de acordo com os elementos que entre o parâmetro colocado no parênteses. 
+		separando de acordo com vírgulas:
+			frutas_lista = frutas_usuario.split(', ') #colocando ', ' para separar sempre que tiver vírgula + espaço
+			input - maça, banana, uva 
+			print -> ['maça', 'banana', 'uva']
+			
+			
+Tuples
+	A diferença entre tuples e lista, é que na tuple vc não pode alterar.
+	cores_tuple = ('preto', 'branco', 'cinza', 'azul') # Parênteses ao invés de colchetes
+	# Se o conteúdo é FIXO e nunca vai ser alterado, é melhor usar tuple.
+	# Se o conteúdo pode ser que no futuro seja alterado, é melhor usar listas.
+	# Tuple é mais leve, lista gasta mais memória.
