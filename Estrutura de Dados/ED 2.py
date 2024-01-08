@@ -23,7 +23,6 @@ print(inteiros)
 print(float)
 
 print('----- Aula 59 -----')
-
 # A59 - Criando Sets
 # Set é similar a listas, evita itens duplicados e não utiliza index
 
