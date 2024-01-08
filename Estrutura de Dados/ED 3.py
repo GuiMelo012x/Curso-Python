@@ -29,7 +29,6 @@ del aluno['idade']
 print(aluno)
 
 print('----- Aluno 65 -----')
-
 # A65 - Looping dentro de um dicionário
 
 for i in aluno:
