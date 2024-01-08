@@ -150,7 +150,66 @@ Funções dentro de Listas - https://docs.python.org/3/tutorial/datastructures.h
 			
 Tuples
 	A diferença entre tuples e lista, é que na tuple vc não pode alterar.
+	Se o conteúdo é FIXO e nunca vai ser alterado, é melhor usar tuple.
+	Se o conteúdo pode ser que no futuro seja alterado, é melhor usar listas.
+	Tuple é mais leve, lista gasta mais memória.
 	cores_tuple = ('preto', 'branco', 'cinza', 'azul') # Parênteses ao invés de colchetes
-	# Se o conteúdo é FIXO e nunca vai ser alterado, é melhor usar tuple.
-	# Se o conteúdo pode ser que no futuro seja alterado, é melhor usar listas.
-	# Tuple é mais leve, lista gasta mais memória.
+	
+
+Arrays
+	Utiliza-se Arrays quando uma lista é muito grande.
+	deve-se importar com a linha de código "from array import array" (linha 1).
+		from array import array
+
+	letras = ['a','b','c','d']
+	numeros_i = [10,20,30,40]
+	numeros_f = [1.2,2.2,3.2]
+	
+	letras = array('u', ['a','b','c','d']) -> typecode u = Strings
+	inteiros = array('i', [10,20,30,40]) -> typecode i = Integers
+	float = array('f', [1.2,2.2,3.2]) -> typecode f = Float
+	
+	
+Sets
+	Um Set é similar a listas, evita itens duplicados e não utiliza index.
+	num1 = set(list1) -> [10,20,30,40,50]
+	num2 = set(list2) -> [10,20,60,70]
+	list1 = set([1,2,3,4,5,6])
+	s1 = {1,2,3,4,5,6}
+
+
+	
+	
+	print(num1 | num2) -> {70, 40, 10, 50, 20, 60, 30}
+		| = union. Ele unifica as 2 listas e não repete os valores que estão repetidos, mas ainda os mostra.
+	
+	print(num1 - num2) -> {40, 50, 30}
+		- = difference. Ele mostra apenas os números que estão na lista 1 e não na lista 2.
+	
+	print(num1 ^ num2) -> {70, 40, 50, 60, 30}
+		^ = symmetric difference. Ele mostra as 2 listas juntas, e retira os valores repetidos, mostrando apenas os que não se repetem
+	
+	print(num1 & num2) -> {10, 20}
+		& = and. Mostra apenas os itens que estão duplicados nas 2 listas.
+
+	print(len(num1)) -> 5
+		len -> lenght. Mostra quantos elementos tem no set.
+
+Funções em Sets
+	s1 = {1,2,3,4,5,6,1,2,3}
+	
+	s1.add(7) -> adiciona um item no final.
+	s1.add(1) -> {1, 2, 3, 4, 5, 6, 7} pois ele ignora os duplicados (já tinha o 1).
+	
+	s1.update([1,2,8,9]) -> adiciona o 8 e o 9, pois o 1 e o 2 já existia.	
+		print -> {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+	s1.remove(9) -> remove o 9
+	s1.discard(8) -> remove o 8
+	remove e discard fazem a mesma coisa, só que o remove dá erro se o item não estiver no set.
+	
+	set4 = set1.union(set2) -> une os 2 e mostra todos os elementos sem repetir.
+	set4 = set1.difference(set3)
+
+Dicionário
+	Dicionários utilizam index no formato de keys e de values, e aceita string, int, float, boolean.
