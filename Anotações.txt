@@ -318,3 +318,20 @@ Exception
 	finally:
 		print('Código finalizado.')
 	
+POO
+	Classes --> Utilizadas para criar objetos
+	Objetos --> São partes dentro de uma classe
+	Classes agrupam dados e funções, sendo capaz de reutilizar.
+		Classe: fruta
+		Objeto: abacate,banana,maçã.
+	
+	Construtores --> Reduz a passagem de parâmetros
+		
+	
+	class Funcionarios:
+		pass 			# pass permite que a classe fique vazia.
+	
+	Construtores
+		def __init__(self, nome, sobrenome, data_nascimento):
+			self.nome = nome
+				self --> é o objeto.argumento, seria o "this.nome = nome" em Java
