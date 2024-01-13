@@ -1,4 +1,4 @@
-# A107 - Desafio 6 - Listas
+# A107 - Desafio 6 - Criando Listas
 '''
 
 Crie uma lista chamada "frutas", que contenha os itens "maçã","banana","manga" e "uva".
