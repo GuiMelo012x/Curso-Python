@@ -12,5 +12,4 @@ def calcular(num1,num2):
     print(type(num2))
     return resultado
 
-
 print('O resultado da divisão é',calcular(10,3,5))
