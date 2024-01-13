@@ -1,4 +1,4 @@
-# A110 - Desafio 7 - Index de Listas
+# A109 - Desafio 7 - Index de Listas
 '''
 
 Utilize a lista "frutas" do desafio anterior, e imprima o primeiro  e o último elemento da lista.
