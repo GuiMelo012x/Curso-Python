@@ -107,7 +107,15 @@ XArgs
 Listas
 	inicializa com colchetes
 	cidades = ['Gramado', 'Santos', 'Garanhuns', 'Curitiba']
-
+	numeros = [1,2,3,4,5,6,7,8,9,10]
+	numeros = list(range(1,11)) # forma 2 de fazer uma lista
+	para imprimir apenas os itens, basta remover os colchetes e colocar apenas o i no print.
+	para remover, existem três maneiras:
+		frutas.remove('manga') 
+		frutas.__delitem__(3)
+		del frutas [3]
+	
+	
 Funções do Python:
 	cor_cliente.lower() - retira a sensibilidade do maiúsculo ou minúsculo do input.
 
@@ -190,7 +198,7 @@ Sets
 		^ = symmetric difference. Ele mostra as 2 listas juntas, e retira os valores repetidos, mostrando apenas os que não se repetem
 	
 	print(num1 & num2) -> {10, 20}
-		& = and. Mostra apenas os itens que estão duplicados nas 2 listas.
+		& = and ou intersection. Mostra apenas os itens que estão duplicados nas 2 listas.
 
 	print(len(num1)) -> 5
 		len -> lenght. Mostra quantos elementos tem no set.
@@ -335,3 +343,17 @@ POO
 		def __init__(self, nome, sobrenome, data_nascimento):
 			self.nome = nome
 				self --> é o objeto.argumento, seria o "this.nome = nome" em Java
+
+Módularização
+	from funcoes import somar # (nome da função)
+	import funcoes
+		o "import" importa tudo
+		o "from" puxa apenas algumas funções.
+		
+	Package
+		1.criar um Python package
+		2.importar escrevendo o nome da package.modulo
+			--> from Itens.cadastro import cliente
+			--> Itens = python package
+				--> cadastro = cadastro.py, dentro da package
+					--> cliente = funcão cliente()
