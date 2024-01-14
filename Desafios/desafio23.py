@@ -4,6 +4,8 @@
 Crie dois conjuntos, cada um contendo 5 nomes. Alguns nomes devem estar presentes em ambos os conjuntos.
 Use um método para encontrar quais nomes aparecem em ambos os conjuntos e imprima o resultado.
 
+Bônus: vou usar os outros métodos além do intersection.
+
 '''
 
 s1 = {'Chandler', 'Monica', 'Joey', 'Ross', 'Rachel'}
